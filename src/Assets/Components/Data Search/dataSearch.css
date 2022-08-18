@@ -1,0 +1,162 @@
+.main-div {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #eff3fa 0%, #8471ffc7 100%);
+}
+
+.info-container {
+  width: 85%;
+}
+
+.info-Image {
+  display: flex;
+  justify-content: space-around;
+}
+
+span {
+  margin-left: 10px;
+}
+
+.header {
+  font-size: 40px;
+  text-align: center;
+
+  background-color: #553c9a;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  border-radius: 9px;
+  background-color: aliceblue;
+  height: 120px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: transform 0.75s;
+}
+
+img {
+  height: 60px;
+}
+
+.item:hover {
+  transform: scale(1.25);
+}
+
+a {
+  color: #505050;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 880px) {
+  .info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cases-container {
+    width: 100%;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+}
+
+.input-field {
+  background-color: rgb(205, 205, 205);
+  border: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 3px solid rgb(166, 166, 166);
+}
+
+.data-row {
+  display: flex;
+  background-color: rgb(180, 255, 246);
+  padding: 20px;
+  width: 100%;
+
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.data-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  margin-left: 10px;
+}
+
+img#covid-icon {
+  height: 30px;
+}
+
+.rec-row {
+  background-color: rgb(206, 255, 154);
+}
+
+.death-row {
+  background-color: rgb(225, 155, 102);
+}
+
+.pcr-row {
+  background-color: rgb(186, 186, 186);
+}
+
+.data-Card {
+  background-color: white;
+  box-shadow: 0 10px 20px -8px rgb(10 43 64 / 60%);
+  width: fit-content;
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  min-width: 100%;
+}
+
+/*Input Field CSS */
+
+.input-Field {
+  width: 100%;
+}
+.input-Field input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  box-shadow: #553c9a 0px 0px 0px 1px;
+  background-color: white;
+  color: #553c9a;
+}
+.input-Field button {
+  background-color: white;
+  transition: ease-in-out 0.2s;
+  border-radius: 0% !important;
+  color: #553c9a !important;
+  border-color: #553c9a !important;
+}
+
+.input-Field button:hover {
+  background-color: #553c9a;
+  color: white !important;
+}
