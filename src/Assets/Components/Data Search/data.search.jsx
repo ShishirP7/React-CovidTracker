@@ -5,14 +5,10 @@ import today from "../../Images/stayhome.png";
 import death from "../../Images/death.png";
 import recovered from "../../Images/hospital-bed.png";
 import critical from "../../Images/critical.png";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { BsEmojiSmile } from "react-icons/bs";
 import { ImSad } from "react-icons/im";
 import { FaSyringe } from "react-icons/fa";
-import { Button } from "react-bootstrap";
-import Form from "react-bootstrap/Form";
 import "./dataSearch.css";
-import { useState } from "react";
 import { useContext } from "react";
 import { DataContext } from "../../Context/ContextData";
 

@@ -1,39 +1,31 @@
-import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+function NavBar() {
   return (
-    <>
-      <div>
-        <nav class="navbar navbar-expand-lg ">
-          <div class="container">
-            <img className="nav-logo mr-3" alt="Corona Virus" />
-            <div className="d-flex-row col ">
-              <label className="nav-logo-text "> Covid-19</label>
-            </div>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand>COVID-19</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link>Global Cases</Nav.Link>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo02"
-              aria-controls="navbarTogglerDemo02"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarTogglerDemo02"
-            >
-              <span>Home</span>
-              <span>About</span>
-              <span>Prevention</span>
-              <span>News</span>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </>
+            <Nav.Link>About</Nav.Link>
+
+            <Nav.Link>Precautions</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link>Latest News</Nav.Link>
+            <Nav.Link>Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
+
+export default NavBar;

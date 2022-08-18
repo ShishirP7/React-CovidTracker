@@ -1,13 +1,16 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export const DataContext = createContext({});
 
 const DataProvider = ({ children }) => {
   const [Data, setData] = useState([]);
-  axios.get("https://api.covid19api.com/summary").then((data) => {
-    setData(data.data.Global);
-  });
+
+  useEffect(() => {
+    axios.get("https://api.covid19api.com/summary").then((data) => {
+      setData(data.data.Global);
+    });
+  }, []);
 
   const [details, setdetails] = useState("");
   const [CountryData, setCountryData] = useState("");

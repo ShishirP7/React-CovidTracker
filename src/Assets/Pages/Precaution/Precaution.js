@@ -1,5 +1,4 @@
 import React from "react";
-import "./Precaution.css";
 
 export default function Precaution() {
   return (
@@ -54,7 +53,6 @@ export default function Precaution() {
                   Regular handwashing is the best ways to remove germs, avoid
                   getting sick, and prevent the spread of germs to others.
                 </p>
-                
               </div>
             </div>
           </div>
