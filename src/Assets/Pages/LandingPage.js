@@ -4,6 +4,7 @@ import Navbar from "../Components/NavBar/Navbar";
 import CovidBanner from "../Images/covid19Banner.jpg";
 import "../Pages/LandingPage.css";
 import { DataContext } from "../Context/ContextData";
+import News from "../Components/NewsComp/News";
 export default function LandingPage() {
   const { Data, setData } = useContext(DataContext);
   const data = () => {
@@ -28,6 +29,7 @@ export default function LandingPage() {
 
         <DataSearch />
       </div>
+      <News/>
     </>
   );
 }
