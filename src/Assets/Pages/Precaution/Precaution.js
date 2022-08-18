@@ -11,7 +11,7 @@ export default function Precaution() {
           <div className="col mx-5">
             <div className="card" style={{ width: `18rem` }}>
               <img
-                src="./assets/images/mask.jpg"
+                src=""
                 className="card-img-top"
                 alt="..."
                 height="190px"
@@ -28,7 +28,7 @@ export default function Precaution() {
           <div className="col mx-5">
             <div className="card" style={{ width: `18rem` }}>
               <img
-                src="./assets/images/distance.jpg"
+                src=""
                 className="card-img-top"
                 alt="..."
                 height="167px"
@@ -46,7 +46,12 @@ export default function Precaution() {
           </div>
           <div className="col mx-5">
             <div className="card" style={{ width: `18rem` }}>
-              <img src="" className="card-img-top" alt="..." height="190px" />
+              <img
+                src=""
+                className="card-img-top"
+                alt="..."
+                height="190px"
+              />
               <div className="card-body">
                 <h5 className="card-title fw-bold fs-5">Wash Your Hands</h5>
                 <p className="card-text fs-6">
@@ -61,7 +66,12 @@ export default function Precaution() {
               className="card"
               style={{ width: `18rem`, margin: `10px 224px` }}
             >
-              <img src="" className="card-img-top" alt="..." height="167px" />
+              <img
+                src=""
+                className="card-img-top"
+                alt="..."
+                height="167px"
+              />
               <div className="card-body">
                 <h5 className="card-title fw-bold fs-5">
                   Avoid Close Contact With Infected People
@@ -78,7 +88,12 @@ export default function Precaution() {
               className="card"
               style={{ width: `18rem`, margin: `10px 10px` }}
             >
-              <img src="." className="card-img-top" alt="..." height="190px" />
+              <img
+                src=""
+                className="card-img-top"
+                alt="..."
+                height="190px"
+              />
               <div className="card-body">
                 <h5 className="card-title fw-bold fs-5">Stay At Home</h5>
                 <p className="card-text fs-6">
