@@ -25,6 +25,7 @@ export const DataSearch = () => {
 export const DataCard = () => {
   return (
     <>
+      {/* Covid Data Container*/}
       <div className="container data-Card p-5 ">
         <div className="row info-container">
           {/* <h1 className="header mb-5">Covid-19 Data Globally</h1> */}
@@ -35,6 +36,8 @@ export const DataCard = () => {
     </>
   );
 };
+
+{/* Global Data Component*/ }
 export const GlobalData = () => {
   const { Data, setData } = useContext(DataContext);
   return (
@@ -112,7 +115,7 @@ export const GlobalData = () => {
     </div>
   );
 };
-
+{/* Searched Data Component*/ }
 export const SearchCountry = () => {
   const { handleSearch, setdetails, CountryData } = useContext(DataContext);
 
