@@ -1,5 +1,9 @@
 import React from "react";
-
+import Mask from "../../Images/mask.jpg";
+import Distance from "../../Images/distance.jpg"
+import Wash from "../../Images/wash.jpg"
+import Infected from "../../Images/infected.png"
+import Stay from "../../Images/stayhome.png"
 export default function Precaution() {
   return (
     <>
@@ -11,10 +15,10 @@ export default function Precaution() {
           <div className="col mx-5">
             <div className="card" style={{ width: `18rem` }}>
               <img
-                src=""
+                src={Mask}
                 className="card-img-top"
                 alt="..."
-                height="190px"
+                height="400px"
               />
               <div className="card-body">
                 <h5 className="card-title fw-bold fs-5">Wear Mask</h5>
@@ -27,12 +31,7 @@ export default function Precaution() {
           </div>
           <div className="col mx-5">
             <div className="card" style={{ width: `18rem` }}>
-              <img
-                src=""
-                className="card-img-top"
-                alt="..."
-                height="167px"
-              />
+              <img src={Distance} className="card-img-top" alt="..." height="167px" />
               <div className="card-body">
                 <h5 className="card-title fw-bold fs-5">
                   Practice Social Distancing{" "}
@@ -46,12 +45,7 @@ export default function Precaution() {
           </div>
           <div className="col mx-5">
             <div className="card" style={{ width: `18rem` }}>
-              <img
-                src=""
-                className="card-img-top"
-                alt="..."
-                height="190px"
-              />
+              <img src={Wash} className="card-img-top" alt="..." height="190px" />
               <div className="card-body">
                 <h5 className="card-title fw-bold fs-5">Wash Your Hands</h5>
                 <p className="card-text fs-6">
@@ -66,12 +60,7 @@ export default function Precaution() {
               className="card"
               style={{ width: `18rem`, margin: `10px 224px` }}
             >
-              <img
-                src=""
-                className="card-img-top"
-                alt="..."
-                height="167px"
-              />
+              <img src={Infected} className="card-img-top" alt="..." height="167px" />
               <div className="card-body">
                 <h5 className="card-title fw-bold fs-5">
                   Avoid Close Contact With Infected People
@@ -88,12 +77,7 @@ export default function Precaution() {
               className="card"
               style={{ width: `18rem`, margin: `10px 10px` }}
             >
-              <img
-                src=""
-                className="card-img-top"
-                alt="..."
-                height="190px"
-              />
+              <img src={Stay} className="card-img-top" alt="..." height="190px" />
               <div className="card-body">
                 <h5 className="card-title fw-bold fs-5">Stay At Home</h5>
                 <p className="card-text fs-6">
