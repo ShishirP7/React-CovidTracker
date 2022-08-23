@@ -160,3 +160,7 @@ img#covid-icon {
   background-color: #553c9a;
   color: white !important;
 }
+
+.img-error{
+height: 300px !important;
+}

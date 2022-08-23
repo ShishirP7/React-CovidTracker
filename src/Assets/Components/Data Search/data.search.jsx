@@ -9,6 +9,7 @@ import { BsEmojiSmile } from "react-icons/bs";
 import { ImSad } from "react-icons/im";
 import { FaSyringe } from "react-icons/fa";
 import "./dataSearch.css";
+import Nodata from "../../Images/nodata.png";
 import { useContext } from "react";
 import { DataContext } from "../../Context/ContextData";
 
@@ -37,7 +38,9 @@ export const DataCard = () => {
   );
 };
 
-{/* Global Data Component*/ }
+{
+  /* Global Data Component*/
+}
 export const GlobalData = () => {
   const { Data, setData } = useContext(DataContext);
   return (
@@ -115,13 +118,15 @@ export const GlobalData = () => {
     </div>
   );
 };
-{/* Searched Data Component*/ }
+{
+  /* Searched Data Component*/
+}
 export const SearchCountry = () => {
   const { handleSearch, setdetails, CountryData } = useContext(DataContext);
 
   return (
     <>
-      <div className="col-5 search-container">
+      <div className="col-5 search-container mt-lg-5 pt-lg-5">
         <div className="container row input-Field gap-2">
           <input
             className="col-7"
@@ -192,15 +197,9 @@ export const SearchCountry = () => {
           </>
         ) : (
           <>
-            <div className="container-fluid mt-5">
-              <div>No countyr Selected</div>
-              {[1, 1, 1, 1, 1].map((el) => {
-                return (
-                  <div className="mt-3">
-                    <div className="card">Country1</div>
-                  </div>
-                );
-              })}
+            <div className="text-align-center mt-5 text-center ">
+              <label className="fs-4">No Data Found</label>
+              <img src={Nodata} className="img-error" alt="" />
             </div>
           </>
         )}

@@ -5,15 +5,16 @@ export const DataContext = createContext({});
 
 const DataProvider = ({ children }) => {
   const [Data, setData] = useState([]);
+  const [details, setdetails] = useState("");
+  const [CountryData, setCountryData] = useState("");
+  const [loading, setloading] = useState(false);
 
   useEffect(() => {
     axios.get("https://api.covid19api.com/summary").then((data) => {
       setData(data.data.Global);
+      setloading(true);
     });
   }, []);
-
-  const [details, setdetails] = useState("");
-  const [CountryData, setCountryData] = useState("");
 
   const handleSearch = (e) => {
     details === ""
