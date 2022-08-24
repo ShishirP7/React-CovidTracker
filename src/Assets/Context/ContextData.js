@@ -13,6 +13,7 @@ const DataProvider = ({ children }) => {
     axios.get("https://api.covid19api.com/summary").then((data) => {
       setData(data.data.Global);
       setloading(true);
+      console.log(data)
     });
   }, []);
 
@@ -31,7 +32,7 @@ const DataProvider = ({ children }) => {
   };
   return (
     <DataContext.Provider
-      value={{ Data, setData, handleSearch, setdetails, CountryData, details }}
+      value={{ Data, setData, handleSearch, setdetails, CountryData, details ,loading}}
     >
       {children}
     </DataContext.Provider>
